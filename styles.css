@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "whitespace1 content content content content whitespace2"
+        "whitespace1 new new new new whitespace2"
+        "footer footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    height: 20vh;
+    margin-bottom: 40px;
+}
+
+.whitespace1 {
+    grid-area: whitespace1;
+    height: 10vh;
+}
+
+.whitespace2 {
+    grid-area: whitespace2;
+    height: 10vh;
+}
+
+.new {
+    grid-area: new;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    grid-area: content;
+    height: 75vh;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.label-con {
+    display: flex;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.label-con2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.text-input {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(247, 218, 4);
+    border: 2px solid gray;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.create {
+    background-color: lightgrey;
+}
+
+.help {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: lightslategray;
+    font-weight: lighter;
+}
+
+h4:before,
+h4:after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 1px solid lightslategray;
+    margin: auto;
+}
+
+hr {
+    border: 5px solid rgb(0, 255, 55);
+
+}
+
+.footer {
+    grid-area: footer;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-style: solid;
+    border-top-color: lightslategray;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: blue;
+}
+
+p {
+    margin-bottom: 40px;
+}
